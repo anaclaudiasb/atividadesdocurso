@@ -1,0 +1,31 @@
+import 'dart:math';
+import 'dart:io';
+void main() {
+
+  double n1, n2, n3;
+  double media_total, media;
+  
+	print('digite o código: ');
+  String? codigo = stdin.readLineSync();
+  print('digite a primeira nota: ');
+  n1 = double.parse(stdin.readLineSync()!);
+  print('digite a segunda nota: ');
+  n2 = double.parse(stdin.readLineSync()!);
+  print('digite a terceira nota: ');
+  n3 = double.parse(stdin.readLineSync()!);
+
+  media = (nota1 * 4) + (nota2 * 3) + (nota3 * 3);
+  media_total = media / 10;
+
+  print('código: $codigo');
+  print('primeira nota: $n1');
+  print('segunda nota: $n2');
+  print('terceira nota: $n3');
+  print('média calculada: $media_total');
+  
+  if(media_total >= 5){
+    print('você foi aprovado!');
+  }else{
+    print('você foi reprovado!:(');
+  }
+}
