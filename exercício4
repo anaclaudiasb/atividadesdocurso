@@ -1,0 +1,41 @@
+import 'dart:math';
+import 'dart:io';
+
+class Pessoa{
+  String _nome = ''; 
+  int _data_nasc = 0;
+  double _altura = 0;
+  int idade = 0;
+  
+  Pessoa(String nome, int data_n, double altura){
+    this._nome = nome;
+    this._data_n = data_n;
+    this._altura = altura;
+  }
+ 
+  int getdatan() => this._data_n;
+  double getaltura() => this._altura;
+  String getnome() => this._nome;
+  
+  //setters
+  void setdatan(int data_n){
+    this._data_n= data_n;
+  }
+  void setAltura(double altura){
+    this._altura = altura;
+  }
+  void setNome(String nome){
+    this._nome = nome;
+  }
+  
+  //métodos
+  void calcularIdade(){
+    idade = 2022 - _data_n;
+  }
+  void imprimirDados(){
+   
+    print('nome: $_nome');
+    print('idade: $idade anos');
+    print('altura: $_altura cm');
+  }
+}
