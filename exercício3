@@ -1,0 +1,25 @@
+import 'dart:math';
+import 'dart:io';
+void main() {
+
+  int idade;
+ 
+	print('digite a idade do nadador: ');
+  idade = int.parse(stdin.readLineSync()!);
+
+  print('você faz parte de qual categoria: ');
+  if(idade == 5 && idade <= 7){
+    print('categoria infantil a');
+  }else if(idade == 8 && idade <= 10){
+    print('categoria I
+infantial b');
+  }else if(idade == 11 && idade <= 13){
+    print('categoria juvenil a');
+  }else if(idade == 14 && idade <= 17){
+    print('categoria juvenil b');
+  }else if(idade > 18){
+    print('categoria adulto');
+  }else{
+    print('ainda não faz parte de nenhuma das categorias:(');
+  }
+}
